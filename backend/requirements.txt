@@ -1,0 +1,10 @@
+flask-restful
+flask-cors
+pandas
+opencv-python
+numpy
+matplotlib
+nltk
+scikit-learn
+gensim
+scipy==1.10.1
