@@ -1,4 +1,4 @@
-# File Analysis Project
+# Analysis Project
 
 This project consists of a React frontend and a Flask backend that perform data analysis based on the uploaded file type. Here's how to get started and use the application.
 
@@ -26,6 +26,10 @@ This will start the frontend and backend services in containers and expose them 
 - Backend URL: POST http://localhost:5000/analyze
 
     The backend provides an API endpoint for analyzing the uploaded files.
+    
+    #### Payload:
+    -   key: "file"
+    -   value: The file to be uploaded
     
 ### Expected Responses
 
