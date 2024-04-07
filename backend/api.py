@@ -10,7 +10,11 @@ from utils.create_tsne_visual import create_tsne_visualization
 
 app = Flask(__name__)
 api = Api(app)
-CORS(app, expose_headers=["Content-Disposition"])
+CORS(
+    app,
+    resources={r"*": {"origins": "*", "methods": ["GET", "POST", "PUT", "DELETE"], "allow_headers": ["Content-Type", "Authorization"]}}
+    expose_headers=["Content-Disposition"]
+)
 
 
 @app.route('/analyze' , methods=['POST'])
