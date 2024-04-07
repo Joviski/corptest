@@ -3,7 +3,6 @@ import './App.css';
 import React, { useState } from 'react';
 
 const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/analyze`;
-alert(apiUrl)
 
 function FileUpload() {
   const [file, setFile] = useState(null);
